@@ -1,0 +1,1 @@
+ref: [[Sequelize] Sequelize の導入と簡単な使い方 - Qiita](https://qiita.com/ksh-fthr/items/7bc66911fd5c7506deeb)                                                                                                                                                            い
