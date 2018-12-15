@@ -1,9 +1,19 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express')
+const models = require('../models')
+const router = express.Router()
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+router.get('/', (req, res, next) => {
+  const userId = req.query.user_id
+  const name = req.query.name
 
-module.exports = router;
+  models.User.findOrCreate(
+    {
+      'where' : {'id': userId},
+      'defaults': { 'id': userId, 'name': name }
+    }
+  ).spread((user, created) => {
+    res.send({ 'user': user, 'created': created })
+  })
+})
+
+module.exports = router
