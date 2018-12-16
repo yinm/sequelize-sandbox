@@ -1,0 +1,1 @@
+ref: [sequelize/migrations.md at 850a47912c668c33992ef29d2373947042c0452f · sequelize/sequelize](https://github.com/sequelize/sequelize/blob/850a47912c668c33992ef29d2373947042c0452f/docs/migrations.md)
